@@ -1,0 +1,1097 @@
+/*
+ * Automatically Generated from Mathematica.
+ * Sat 20 Oct 2018 16:51:15 GMT-04:00
+ */
+
+#ifdef MATLAB_MEX_FILE
+#include <stdexcept>
+#include <cmath>
+/**
+ * Copied from Wolfram Mathematica C Definitions file mdefs.hpp
+ * Changed marcos to inline functions (Eric Cousineau)
+ */
+inline double Power(double x, double y) { return pow(x, y); }
+inline double Sqrt(double x) { return sqrt(x); }
+
+inline double Abs(double x) { return fabs(x); }
+
+inline double Exp(double x) { return exp(x); }
+inline double Log(double x) { return log(x); }
+
+inline double Sin(double x) { return sin(x); }
+inline double Cos(double x) { return cos(x); }
+inline double Tan(double x) { return tan(x); }
+
+inline double ArcSin(double x) { return asin(x); }
+inline double ArcCos(double x) { return acos(x); }
+inline double ArcTan(double x) { return atan(x); }
+
+/* update ArcTan function to use atan2 instead. */
+inline double ArcTan(double x, double y) { return atan2(y,x); }
+
+inline double Sinh(double x) { return sinh(x); }
+inline double Cosh(double x) { return cosh(x); }
+inline double Tanh(double x) { return tanh(x); }
+
+const double E	= 2.71828182845904523536029;
+const double Pi = 3.14159265358979323846264;
+const double Degree = 0.01745329251994329576924;
+
+
+#endif
+
+/*
+ * Sub functions
+ */
+static void output1(double *p_output1,const double *var1,const double *var2)
+{
+  double t135;
+  double t218;
+  double t222;
+  double t228;
+  double t265;
+  double t267;
+  double t270;
+  double t462;
+  double t465;
+  double t468;
+  double t495;
+  double t497;
+  double t517;
+  double t518;
+  double t520;
+  double t521;
+  double t496;
+  double t498;
+  double t499;
+  double t524;
+  double t525;
+  double t526;
+  double t500;
+  double t523;
+  double t537;
+  double t538;
+  double t539;
+  double t563;
+  double t564;
+  double t565;
+  double t572;
+  double t574;
+  double t573;
+  double t575;
+  double t576;
+  double t578;
+  double t579;
+  double t580;
+  double t584;
+  double t585;
+  double t586;
+  double t587;
+  double t577;
+  double t581;
+  double t582;
+  double t589;
+  double t590;
+  double t591;
+  double t602;
+  double t603;
+  double t604;
+  double t605;
+  double t606;
+  double t608;
+  double t609;
+  double t652;
+  double t620;
+  double t621;
+  double t622;
+  double t592;
+  double t593;
+  double t619;
+  double t648;
+  double t650;
+  double t598;
+  double t599;
+  double t600;
+  double t661;
+  double t662;
+  double t690;
+  double t691;
+  double t695;
+  double t696;
+  double t697;
+  double t699;
+  double t700;
+  double t527;
+  double t528;
+  double t536;
+  double t556;
+  double t557;
+  double t559;
+  double t560;
+  double t562;
+  double t566;
+  double t567;
+  double t568;
+  double t569;
+  double t570;
+  double t571;
+  double t688;
+  double t689;
+  double t698;
+  double t701;
+  double t702;
+  double t703;
+  double t707;
+  double t708;
+  double t712;
+  double t713;
+  double t722;
+  double t723;
+  double t724;
+  double t725;
+  double t726;
+  double t744;
+  double t745;
+  double t746;
+  double t776;
+  double t778;
+  double t804;
+  double t810;
+  double t812;
+  double t813;
+  double t777;
+  double t798;
+  double t802;
+  double t817;
+  double t818;
+  double t820;
+  double t803;
+  double t814;
+  double t824;
+  double t828;
+  double t829;
+  double t835;
+  double t836;
+  double t837;
+  double t850;
+  double t852;
+  double t851;
+  double t855;
+  double t858;
+  double t860;
+  double t861;
+  double t862;
+  double t877;
+  double t878;
+  double t879;
+  double t880;
+  double t859;
+  double t863;
+  double t864;
+  double t882;
+  double t883;
+  double t884;
+  double t911;
+  double t912;
+  double t913;
+  double t917;
+  double t918;
+  double t922;
+  double t924;
+  double t934;
+  double t928;
+  double t929;
+  double t930;
+  double t276;
+  double t409;
+  double t450;
+  double t451;
+  double t452;
+  double t459;
+  double t471;
+  double t474;
+  double t477;
+  double t480;
+  double t481;
+  double t482;
+  double t727;
+  double t736;
+  double t740;
+  double t741;
+  double t742;
+  double t743;
+  double t747;
+  double t748;
+  double t749;
+  double t756;
+  double t757;
+  double t772;
+  double t834;
+  double t821;
+  double t822;
+  double t830;
+  double t831;
+  double t832;
+  double t596;
+  double t607;
+  double t885;
+  double t886;
+  double t905;
+  double t907;
+  double t908;
+  double t909;
+  double t921;
+  double t927;
+  double t931;
+  double t932;
+  double t937;
+  double t938;
+  double t1015;
+  double t1016;
+  double t1017;
+  double t1018;
+  double t1019;
+  double t1023;
+  double t1024;
+  double t823;
+  double t833;
+  double t838;
+  double t839;
+  double t840;
+  double t844;
+  double t845;
+  double t849;
+  double t1013;
+  double t1014;
+  double t1022;
+  double t1025;
+  double t1026;
+  double t1027;
+  double t1028;
+  double t1029;
+  double t1030;
+  double t1031;
+  double t595;
+  double t597;
+  double t617;
+  double t618;
+  double t1047;
+  double t1048;
+  double t1055;
+  double t1056;
+  double t901;
+  double t906;
+  double t925;
+  double t926;
+  double t1045;
+  double t1046;
+  double t1061;
+  double t1062;
+  double t942;
+  double t943;
+  double t965;
+  double t966;
+  double t968;
+  double t969;
+  double t980;
+  double t982;
+  double t986;
+  double t987;
+  double t989;
+  double t990;
+  double t996;
+  double t997;
+  double t999;
+  double t1000;
+  double t1063;
+  double t1064;
+  double t1079;
+  double t1080;
+  double t1093;
+  double t1094;
+  double t1095;
+  double t1096;
+  double t1097;
+  double t1098;
+  double t1099;
+  double t1100;
+  double t1102;
+  double t1103;
+  double t1104;
+  double t1109;
+  double t1110;
+  double t1111;
+  double t1127;
+  double t1128;
+  double t1129;
+  double t1130;
+  double t1131;
+  double t1132;
+  double t1133;
+  double t1135;
+  double t1136;
+  double t1137;
+  double t1141;
+  double t1142;
+  double t1143;
+  double t1134;
+  double t1138;
+  double t1139;
+  double t1149;
+  double t1150;
+  double t1151;
+  double t1140;
+  double t1144;
+  double t1145;
+  double t1156;
+  double t1157;
+  double t1158;
+  double t1101;
+  double t1105;
+  double t1106;
+  double t1107;
+  double t1108;
+  double t1113;
+  double t1117;
+  double t1118;
+  double t1119;
+  double t1120;
+  double t1121;
+  double t1180;
+  double t1181;
+  double t1183;
+  double t1184;
+  double t1124;
+  double t1168;
+  double t1169;
+  double t1170;
+  double t1192;
+  double t1193;
+  double t1195;
+  double t1196;
+  double t1197;
+  double t1173;
+  double t1201;
+  double t1202;
+  double t1203;
+  double t1194;
+  double t1198;
+  double t1199;
+  double t1174;
+  double t1175;
+  double t1087;
+  double t1088;
+  double t1089;
+  double t1090;
+  double t1091;
+  double t1092;
+  double t1222;
+  double t1223;
+  double t1224;
+  double t1225;
+  double t1226;
+  double t1227;
+  double t1228;
+  double t1229;
+  double t1231;
+  double t1232;
+  double t1233;
+  double t1243;
+  double t1244;
+  double t1245;
+  double t1246;
+  double t1247;
+  double t1248;
+  double t1249;
+  double t1251;
+  double t1252;
+  double t1253;
+  double t1257;
+  double t1258;
+  double t1259;
+  double t1250;
+  double t1254;
+  double t1255;
+  double t1214;
+  double t1215;
+  double t1216;
+  double t1217;
+  double t1218;
+  double t1219;
+  double t1230;
+  double t1234;
+  double t1235;
+  double t1237;
+  double t1238;
+  double t1239;
+  double t1271;
+  double t1272;
+  double t1273;
+  double t1256;
+  double t1260;
+  double t1261;
+  double t1263;
+  double t1264;
+  double t1265;
+  double t1289;
+  double t1290;
+  double t1291;
+  double t1269;
+  double t1270;
+  double t1275;
+  double t1279;
+  double t1280;
+  double t1317;
+  double t1318;
+  double t1320;
+  double t1321;
+  double t1283;
+  double t1305;
+  double t1306;
+  double t1307;
+  double t1329;
+  double t1330;
+  double t1332;
+  double t1333;
+  double t1334;
+  double t1310;
+  double t1338;
+  double t1339;
+  double t1340;
+  double t1331;
+  double t1335;
+  double t1336;
+  double t1311;
+  double t1312;
+  double t1352;
+  double t1357;
+  double t1358;
+  double t1359;
+  double t1360;
+  double t1353;
+  double t1354;
+  double t1355;
+  double t1362;
+  double t1363;
+  double t1364;
+  double t1366;
+  double t1367;
+  double t1368;
+  double t1356;
+  double t1361;
+  double t1378;
+  double t1379;
+  double t1380;
+  double t1383;
+  double t1384;
+  double t1387;
+  double t1410;
+  double t1415;
+  double t1416;
+  double t1417;
+  double t1418;
+  double t1411;
+  double t1412;
+  double t1413;
+  double t1420;
+  double t1421;
+  double t1422;
+  double t1424;
+  double t1425;
+  double t1426;
+  double t1414;
+  double t1419;
+  double t1436;
+  double t1437;
+  double t1438;
+  double t1441;
+  double t1442;
+  double t1445;
+  double t1469;
+  double t1470;
+  double t1471;
+  double t1473;
+  double t1474;
+  double t1475;
+  double t1468;
+  double t1484;
+  double t1485;
+  double t1498;
+  double t1499;
+  double t1500;
+  double t1502;
+  double t1503;
+  double t1504;
+  double t1497;
+  double t1513;
+  double t1514;
+  t135 = Cos(var1[3]);
+  t218 = Sin(var1[2]);
+  t222 = -1.*t135*t218;
+  t228 = Cos(var1[2]);
+  t265 = Sin(var1[3]);
+  t267 = -1.*t228*t265;
+  t270 = t222 + t267;
+  t462 = t228*t135;
+  t465 = -1.*t218*t265;
+  t468 = t462 + t465;
+  t495 = Cos(var1[5]);
+  t497 = Sin(var1[5]);
+  t517 = t135*t495;
+  t518 = -1.*t265*t497;
+  t520 = t517 + t518;
+  t521 = t228*t520;
+  t496 = -1.*t495*t265;
+  t498 = -1.*t135*t497;
+  t499 = t496 + t498;
+  t524 = t495*t265;
+  t525 = t135*t497;
+  t526 = t524 + t525;
+  t500 = t218*t499;
+  t523 = t500 + t521;
+  t537 = t228*t499;
+  t538 = -1.*t218*t520;
+  t539 = t537 + t538;
+  t563 = -1.*t135*t495;
+  t564 = t265*t497;
+  t565 = t563 + t564;
+  t572 = Cos(var1[7]);
+  t574 = Sin(var1[7]);
+  t573 = -1.*t572*t497;
+  t575 = -1.*t495*t574;
+  t576 = t573 + t575;
+  t578 = t495*t572;
+  t579 = -1.*t497*t574;
+  t580 = t578 + t579;
+  t584 = t135*t576;
+  t585 = -1.*t265*t580;
+  t586 = t584 + t585;
+  t587 = t228*t586;
+  t577 = -1.*t265*t576;
+  t581 = -1.*t135*t580;
+  t582 = t577 + t581;
+  t589 = t265*t576;
+  t590 = t135*t580;
+  t591 = t589 + t590;
+  t602 = t572*t497;
+  t603 = t495*t574;
+  t604 = t602 + t603;
+  t605 = -1.*t265*t604;
+  t606 = t605 + t590;
+  t608 = -1.*t135*t604;
+  t609 = t608 + t585;
+  t652 = t228*t606;
+  t620 = t135*t604;
+  t621 = t265*t580;
+  t622 = t620 + t621;
+  t592 = -1.*t218*t591;
+  t593 = t592 + t587;
+  t619 = t218*t606;
+  t648 = t228*t622;
+  t650 = t619 + t648;
+  t598 = t228*t591;
+  t599 = t218*t586;
+  t600 = t598 + t599;
+  t661 = -1.*t218*t622;
+  t662 = t652 + t661;
+  t690 = -1.*t495*t572;
+  t691 = t497*t574;
+  t695 = t690 + t691;
+  t696 = t135*t695;
+  t697 = t577 + t696;
+  t699 = t265*t695;
+  t700 = t584 + t699;
+  t527 = -1.*t218*t526;
+  t528 = t527 + t521;
+  t536 = 6.8*t523*t528;
+  t556 = t228*t526;
+  t557 = t218*t520;
+  t559 = t556 + t557;
+  t560 = 6.8*t539*t559;
+  t562 = -1.*t218*t499;
+  t566 = t228*t565;
+  t567 = t562 + t566;
+  t568 = 6.8*t523*t567;
+  t569 = t218*t565;
+  t570 = t537 + t569;
+  t571 = 6.8*t539*t570;
+  t688 = 0.3*t593*t650;
+  t689 = 0.3*t600*t662;
+  t698 = t218*t697;
+  t701 = t228*t700;
+  t702 = t698 + t701;
+  t703 = 0.3*t593*t702;
+  t707 = t228*t697;
+  t708 = -1.*t218*t700;
+  t712 = t707 + t708;
+  t713 = 0.3*t600*t712;
+  t722 = Cos(var1[4]);
+  t723 = -1.*t722*t218;
+  t724 = Sin(var1[4]);
+  t725 = -1.*t228*t724;
+  t726 = t723 + t725;
+  t744 = t228*t722;
+  t745 = -1.*t218*t724;
+  t746 = t744 + t745;
+  t776 = Cos(var1[6]);
+  t778 = Sin(var1[6]);
+  t804 = t722*t776;
+  t810 = -1.*t724*t778;
+  t812 = t804 + t810;
+  t813 = t228*t812;
+  t777 = -1.*t776*t724;
+  t798 = -1.*t722*t778;
+  t802 = t777 + t798;
+  t817 = t776*t724;
+  t818 = t722*t778;
+  t820 = t817 + t818;
+  t803 = t218*t802;
+  t814 = t803 + t813;
+  t824 = t228*t802;
+  t828 = -1.*t218*t812;
+  t829 = t824 + t828;
+  t835 = -1.*t722*t776;
+  t836 = t724*t778;
+  t837 = t835 + t836;
+  t850 = Cos(var1[8]);
+  t852 = Sin(var1[8]);
+  t851 = -1.*t850*t778;
+  t855 = -1.*t776*t852;
+  t858 = t851 + t855;
+  t860 = t776*t850;
+  t861 = -1.*t778*t852;
+  t862 = t860 + t861;
+  t877 = t722*t858;
+  t878 = -1.*t724*t862;
+  t879 = t877 + t878;
+  t880 = t228*t879;
+  t859 = -1.*t724*t858;
+  t863 = -1.*t722*t862;
+  t864 = t859 + t863;
+  t882 = t724*t858;
+  t883 = t722*t862;
+  t884 = t882 + t883;
+  t911 = t850*t778;
+  t912 = t776*t852;
+  t913 = t911 + t912;
+  t917 = -1.*t724*t913;
+  t918 = t917 + t883;
+  t922 = -1.*t722*t913;
+  t924 = t922 + t878;
+  t934 = t228*t918;
+  t928 = t722*t913;
+  t929 = t724*t862;
+  t930 = t928 + t929;
+  t276 = Power(t270,2);
+  t409 = 6.8*t276;
+  t450 = t135*t218;
+  t451 = t228*t265;
+  t452 = t450 + t451;
+  t459 = 6.8*t270*t452;
+  t471 = Power(t468,2);
+  t474 = 6.8*t471;
+  t477 = -1.*t228*t135;
+  t480 = t218*t265;
+  t481 = t477 + t480;
+  t482 = 6.8*t468*t481;
+  t727 = Power(t726,2);
+  t736 = 6.8*t727;
+  t740 = t722*t218;
+  t741 = t228*t724;
+  t742 = t740 + t741;
+  t743 = 6.8*t726*t742;
+  t747 = Power(t746,2);
+  t748 = 6.8*t747;
+  t749 = -1.*t228*t722;
+  t756 = t218*t724;
+  t757 = t749 + t756;
+  t772 = 6.8*t746*t757;
+  t834 = -1.*t218*t802;
+  t821 = -1.*t218*t820;
+  t822 = t821 + t813;
+  t830 = t228*t820;
+  t831 = t218*t812;
+  t832 = t830 + t831;
+  t596 = -1.*t218*t586;
+  t607 = -1.*t218*t606;
+  t885 = -1.*t218*t884;
+  t886 = t885 + t880;
+  t905 = -1.*t218*t879;
+  t907 = t228*t884;
+  t908 = t218*t879;
+  t909 = t907 + t908;
+  t921 = -1.*t218*t918;
+  t927 = t218*t918;
+  t931 = t228*t930;
+  t932 = t927 + t931;
+  t937 = -1.*t218*t930;
+  t938 = t934 + t937;
+  t1015 = -1.*t776*t850;
+  t1016 = t778*t852;
+  t1017 = t1015 + t1016;
+  t1018 = t722*t1017;
+  t1019 = t859 + t1018;
+  t1023 = t724*t1017;
+  t1024 = t877 + t1023;
+  t823 = 6.8*t814*t822;
+  t833 = 6.8*t829*t832;
+  t838 = t228*t837;
+  t839 = t834 + t838;
+  t840 = 6.8*t814*t839;
+  t844 = t218*t837;
+  t845 = t824 + t844;
+  t849 = 6.8*t829*t845;
+  t1013 = 0.3*t886*t932;
+  t1014 = 0.3*t909*t938;
+  t1022 = t218*t1019;
+  t1025 = t228*t1024;
+  t1026 = t1022 + t1025;
+  t1027 = 0.3*t886*t1026;
+  t1028 = t228*t1019;
+  t1029 = -1.*t218*t1024;
+  t1030 = t1028 + t1029;
+  t1031 = 0.3*t909*t1030;
+  t595 = t228*t582;
+  t597 = t595 + t596;
+  t617 = t228*t609;
+  t618 = t607 + t617;
+  t1047 = 13.6*t528*t539;
+  t1048 = 13.6*t539*t567;
+  t1055 = 0.6*t593*t662;
+  t1056 = 0.6*t593*t712;
+  t901 = t228*t864;
+  t906 = t901 + t905;
+  t925 = t228*t924;
+  t926 = t921 + t925;
+  t1045 = 13.6*t270*t468;
+  t1046 = 13.6*t270*t481;
+  t1061 = 13.6*t726*t746;
+  t1062 = 13.6*t726*t757;
+  t942 = -1.*t228*t520;
+  t943 = t562 + t942;
+  t965 = -1.*t228*t526;
+  t966 = t965 + t538;
+  t968 = -1.*t228*t812;
+  t969 = t834 + t968;
+  t980 = -1.*t228*t820;
+  t982 = t980 + t828;
+  t986 = -1.*t228*t591;
+  t987 = t986 + t596;
+  t989 = -1.*t228*t622;
+  t990 = t607 + t989;
+  t996 = -1.*t228*t884;
+  t997 = t996 + t905;
+  t999 = -1.*t228*t930;
+  t1000 = t921 + t999;
+  t1063 = 13.6*t822*t829;
+  t1064 = 13.6*t829*t839;
+  t1079 = 0.6*t886*t938;
+  t1080 = 0.6*t886*t1030;
+  t1093 = -1.*t495;
+  t1094 = 1. + t1093;
+  t1095 = -0.4*t1094;
+  t1096 = -0.51*t495;
+  t1097 = t1095 + t1096;
+  t1098 = t1097*t265;
+  t1099 = -0.11*t135*t497;
+  t1100 = t1098 + t1099;
+  t1102 = t135*t1097;
+  t1103 = 0.11*t265*t497;
+  t1104 = t1102 + t1103;
+  t1109 = -1.*t1097*t265;
+  t1110 = 0.11*t135*t497;
+  t1111 = t1109 + t1110;
+  t1127 = -1.*t572;
+  t1128 = 1. + t1127;
+  t1129 = -0.8*t1128;
+  t1130 = -0.8*t572;
+  t1131 = t1129 + t1130;
+  t1132 = t495*t1131;
+  t1133 = t1095 + t1132;
+  t1135 = 0.4*t497;
+  t1136 = t1131*t497;
+  t1137 = t1135 + t1136;
+  t1141 = t135*t1133;
+  t1142 = -1.*t265*t1137;
+  t1143 = t1141 + t1142;
+  t1134 = t1133*t265;
+  t1138 = t135*t1137;
+  t1139 = t1134 + t1138;
+  t1149 = -1.*t1133*t265;
+  t1150 = -1.*t135*t1137;
+  t1151 = t1149 + t1150;
+  t1140 = -1.*t1139*t591;
+  t1144 = -1.*t1143*t586;
+  t1145 = t1140 + t1144;
+  t1156 = t1143*t606;
+  t1157 = t1139*t622;
+  t1158 = t1156 + t1157;
+  t1101 = -1.*t1100*t520;
+  t1105 = -1.*t499*t1104;
+  t1106 = t1101 + t1105;
+  t1107 = 6.8*t539*t1106;
+  t1108 = t1100*t520;
+  t1113 = t499*t1104;
+  t1117 = t1100*t526;
+  t1118 = t520*t1104;
+  t1119 = t1117 + t1118;
+  t1120 = 6.8*t1119*t567;
+  t1121 = -1.*t499*t1100;
+  t1180 = 0.11*t495*t265;
+  t1181 = t1180 + t1110;
+  t1183 = -0.11*t135*t495;
+  t1184 = t1183 + t1103;
+  t1124 = -1.*t1104*t565;
+  t1168 = 0.3*t593*t1145;
+  t1169 = t1139*t591;
+  t1170 = t1143*t586;
+  t1192 = 0.4*t495;
+  t1193 = t1192 + t1132;
+  t1195 = -0.4*t497;
+  t1196 = -1.*t1131*t497;
+  t1197 = t1195 + t1196;
+  t1173 = 0.3*t1158*t712;
+  t1201 = t135*t1193;
+  t1202 = t265*t1197;
+  t1203 = t1201 + t1202;
+  t1194 = -1.*t1193*t265;
+  t1198 = t135*t1197;
+  t1199 = t1194 + t1198;
+  t1174 = -1.*t1143*t697;
+  t1175 = -1.*t1139*t700;
+  t1087 = Power(t135,2);
+  t1088 = -0.11*t1087;
+  t1089 = Power(t265,2);
+  t1090 = -0.11*t1089;
+  t1091 = t1088 + t1090;
+  t1092 = 6.8*t481*t1091;
+  t1222 = -1.*t776;
+  t1223 = 1. + t1222;
+  t1224 = -0.4*t1223;
+  t1225 = -0.51*t776;
+  t1226 = t1224 + t1225;
+  t1227 = t1226*t724;
+  t1228 = -0.11*t722*t778;
+  t1229 = t1227 + t1228;
+  t1231 = t722*t1226;
+  t1232 = 0.11*t724*t778;
+  t1233 = t1231 + t1232;
+  t1243 = -1.*t850;
+  t1244 = 1. + t1243;
+  t1245 = -0.8*t1244;
+  t1246 = -0.8*t850;
+  t1247 = t1245 + t1246;
+  t1248 = t776*t1247;
+  t1249 = t1224 + t1248;
+  t1251 = 0.4*t778;
+  t1252 = t1247*t778;
+  t1253 = t1251 + t1252;
+  t1257 = t722*t1249;
+  t1258 = -1.*t724*t1253;
+  t1259 = t1257 + t1258;
+  t1250 = t1249*t724;
+  t1254 = t722*t1253;
+  t1255 = t1250 + t1254;
+  t1214 = Power(t722,2);
+  t1215 = -0.11*t1214;
+  t1216 = Power(t724,2);
+  t1217 = -0.11*t1216;
+  t1218 = t1215 + t1217;
+  t1219 = 6.8*t757*t1218;
+  t1230 = -1.*t1229*t812;
+  t1234 = -1.*t802*t1233;
+  t1235 = t1230 + t1234;
+  t1237 = t1229*t820;
+  t1238 = t812*t1233;
+  t1239 = t1237 + t1238;
+  t1271 = -1.*t1226*t724;
+  t1272 = 0.11*t722*t778;
+  t1273 = t1271 + t1272;
+  t1256 = -1.*t1255*t884;
+  t1260 = -1.*t1259*t879;
+  t1261 = t1256 + t1260;
+  t1263 = t1259*t918;
+  t1264 = t1255*t930;
+  t1265 = t1263 + t1264;
+  t1289 = -1.*t1249*t724;
+  t1290 = -1.*t722*t1253;
+  t1291 = t1289 + t1290;
+  t1269 = 6.8*t829*t1235;
+  t1270 = t1229*t812;
+  t1275 = t802*t1233;
+  t1279 = 6.8*t1239*t839;
+  t1280 = -1.*t802*t1229;
+  t1317 = 0.11*t776*t724;
+  t1318 = t1317 + t1272;
+  t1320 = -0.11*t722*t776;
+  t1321 = t1320 + t1232;
+  t1283 = -1.*t1233*t837;
+  t1305 = 0.3*t886*t1261;
+  t1306 = t1255*t884;
+  t1307 = t1259*t879;
+  t1329 = 0.4*t776;
+  t1330 = t1329 + t1248;
+  t1332 = -0.4*t778;
+  t1333 = -1.*t1247*t778;
+  t1334 = t1332 + t1333;
+  t1310 = 0.3*t1265*t1030;
+  t1338 = t722*t1330;
+  t1339 = t724*t1334;
+  t1340 = t1338 + t1339;
+  t1331 = -1.*t1330*t724;
+  t1335 = t722*t1334;
+  t1336 = t1331 + t1335;
+  t1311 = -1.*t1259*t1019;
+  t1312 = -1.*t1255*t1024;
+  t1352 = -0.748*t481;
+  t1357 = t1097*t495;
+  t1358 = Power(t497,2);
+  t1359 = -0.11*t1358;
+  t1360 = t1357 + t1359;
+  t1353 = t1097*t497;
+  t1354 = 0.11*t495*t497;
+  t1355 = t1353 + t1354;
+  t1362 = t1137*t604;
+  t1363 = t1133*t580;
+  t1364 = t1362 + t1363;
+  t1366 = -1.*t1133*t576;
+  t1367 = -1.*t1137*t580;
+  t1368 = t1366 + t1367;
+  t1356 = 6.8*t1355*t539;
+  t1361 = 6.8*t1360*t567;
+  t1378 = 0.3*t1368*t593;
+  t1379 = t1133*t576;
+  t1380 = t1137*t580;
+  t1383 = -1.*t1137*t576;
+  t1384 = -1.*t1133*t695;
+  t1387 = 0.3*t1364*t712;
+  t1410 = -0.748*t757;
+  t1415 = t1226*t776;
+  t1416 = Power(t778,2);
+  t1417 = -0.11*t1416;
+  t1418 = t1415 + t1417;
+  t1411 = t1226*t778;
+  t1412 = 0.11*t776*t778;
+  t1413 = t1411 + t1412;
+  t1420 = t1253*t913;
+  t1421 = t1249*t862;
+  t1422 = t1420 + t1421;
+  t1424 = -1.*t1249*t858;
+  t1425 = -1.*t1253*t862;
+  t1426 = t1424 + t1425;
+  t1414 = 6.8*t1413*t829;
+  t1419 = 6.8*t1418*t839;
+  t1436 = 0.3*t1426*t886;
+  t1437 = t1249*t858;
+  t1438 = t1253*t862;
+  t1441 = -1.*t1253*t858;
+  t1442 = -1.*t1249*t1017;
+  t1445 = 0.3*t1422*t1030;
+  t1469 = 0.4*t572;
+  t1470 = t1131*t572;
+  t1471 = t1469 + t1470;
+  t1473 = 0.4*t574;
+  t1474 = t1131*t574;
+  t1475 = t1473 + t1474;
+  t1468 = -0.748*t567;
+  t1484 = 0.3*t1475*t593;
+  t1485 = 0.3*t1471*t712;
+  t1498 = 0.4*t850;
+  t1499 = t1247*t850;
+  t1500 = t1498 + t1499;
+  t1502 = 0.4*t852;
+  t1503 = t1247*t852;
+  t1504 = t1502 + t1503;
+  t1497 = -0.748*t839;
+  t1513 = 0.3*t1504*t886;
+  t1514 = 0.3*t1500*t1030;
+  p_output1[0]=var2[1]*(-0.5*(t409 + t459 + t474 + t482 + 6.8*Power(t528,2) + 6.8*Power(t539,2) + 0.3*Power(t593,2) + 0.3*Power(t662,2) + t736 + t743 + t748 + t772 + 6.8*Power(t822,2) + 6.8*Power(t829,2) + 0.3*Power(t886,2) + 0.3*t1000*t932 + 0.3*Power(t938,2) + 6.8*t523*t943 + 6.8*t559*t966 + 6.8*t814*t969 + 6.8*t832*t982 + 0.3*t600*t987 + 0.3*t650*t990 + 0.3*t909*t997)*var2[2] - 0.5*(t409 + t459 + t474 + t482 + t536 + t560 + t568 + t571 + 0.3*(t218*t582 + t587)*t593 + 0.3*t597*t600 + 0.3*t618*t650 + 0.3*(t218*t609 + t652)*t662)*var2[3] - 0.5*(t736 + t743 + t748 + t772 + t823 + t833 + t840 + t849 + 0.3*(t218*t864 + t880)*t886 + 0.3*t906*t909 + 0.3*t926*t932 + 0.3*(t218*t924 + t934)*t938)*var2[4] - 0.5*(t536 + t560 + t568 + t571 + t688 + t689 + t703 + t713)*var2[5] - 0.5*(t1013 + t1014 + t1027 + t1031 + t823 + t833 + t840 + t849)*var2[6] - 0.5*(t688 + t689 + t703 + t713)*var2[7] - 0.5*(t1013 + t1014 + t1027 + t1031)*var2[8]);
+  p_output1[1]=var2[1]*(-0.5*(t1045 + t1046 + t1061 + t1062 + 0.6*t1000*t938 + 13.6*t539*t943 + 13.6*t528*t966 + 13.6*t829*t969 + 13.6*t822*t982 + 0.6*t593*t987 + 0.6*t662*t990 + 0.6*t886*t997)*var2[2] - 0.5*(t1045 + t1046 + t1047 + t1048 + 0.6*t593*t597 + 0.6*t618*t662)*var2[3] - 0.5*(t1061 + t1062 + t1063 + t1064 + 0.6*t886*t906 + 0.6*t926*t938)*var2[4] - 0.5*(t1047 + t1048 + t1055 + t1056)*var2[5] - 0.5*(t1063 + t1064 + t1079 + t1080)*var2[6] - 0.5*(t1055 + t1056)*var2[7] - 0.5*(t1079 + t1080)*var2[8]);
+  p_output1[2]=var2[1]*(-0.5*(t1092 + t1219 + 0.3*t1000*t1261 - 2.88*t228 + 6.8*t1119*t943 + 6.8*t1106*t966 + 6.8*t1239*t969 + 6.8*t1235*t982 + 0.3*t1158*t987 + 0.3*t1145*t990 + 0.3*t1265*t997)*var2[2] - 0.5*(t1092 + t1107 + t1120 + 6.8*(t1121 + t1124 - 1.*t1111*t499 - 1.*t1104*t520)*t528 + 6.8*(t1108 + t1113 + t1111*t520 + t1104*t526)*t539 + 0.3*t1158*t597 + 0.3*t1145*t618 + 0.3*t593*(t1139*t606 + t1151*t606 + t1143*t609 + t1143*t622) + 0.3*(-1.*t1143*t582 - 1.*t1139*t586 - 1.*t1151*t586 - 1.*t1143*t591)*t662)*var2[3] - 0.5*(t1219 + t1269 + t1279 + 6.8*(t1280 + t1283 - 1.*t1273*t802 - 1.*t1233*t812)*t822 + 6.8*(t1270 + t1275 + t1273*t812 + t1233*t820)*t829 + 0.3*t1265*t906 + 0.3*t1261*t926 + 0.3*t886*(t1255*t918 + t1291*t918 + t1259*t924 + t1259*t930) + 0.3*(-1.*t1259*t864 - 1.*t1255*t879 - 1.*t1291*t879 - 1.*t1259*t884)*t938)*var2[4] - 0.5*(t1107 + t1120 + t1168 + t1173 + 6.8*(t1121 + t1124 - 1.*t1181*t499 - 1.*t1184*t520)*t528 + 6.8*(t1108 + t1113 + t1181*t520 + t1184*t526)*t539 + 0.3*t593*(t1169 + t1170 + t1199*t606 + t1203*t622) + 0.3*(t1174 + t1175 - 1.*t1199*t586 - 1.*t1203*t591)*t662)*var2[5] - 0.5*(t1269 + t1279 + t1305 + t1310 + 6.8*(t1280 + t1283 - 1.*t1318*t802 - 1.*t1321*t812)*t822 + 6.8*(t1270 + t1275 + t1318*t812 + t1321*t820)*t829 + 0.3*t886*(t1306 + t1307 + t1336*t918 + t1340*t930) + 0.3*(t1311 + t1312 - 1.*t1336*t879 - 1.*t1340*t884)*t938)*var2[6] - 0.5*(t1168 + t1173 + 0.3*(t1169 + t1170)*t593 + 0.3*(t1174 + t1175)*t662)*var2[7] - 0.5*(t1305 + t1310 + 0.3*(t1306 + t1307)*t886 + 0.3*(t1311 + t1312)*t938)*var2[8]);
+  p_output1[3]=var2[1]*(-0.5*(t1352 + 6.8*t1360*t943 + 6.8*t1355*t966 + 0.3*t1364*t987 + 0.3*t1368*t990)*var2[2] - 0.5*(t1352 + t1356 + t1361 + 0.3*t1364*t597 + 0.3*t1368*t618)*var2[3] - 0.5*(t1356 + t1361 + t1378 + t1387 + 6.8*(t1357 + 0.11*Power(t495,2))*t528 + 6.8*(-1.*t1097*t497 - 0.11*t495*t497)*t539 + 0.3*t593*(t1379 + t1380 + t1197*t580 + t1193*t604) + 0.3*(t1383 + t1384 - 1.*t1197*t576 - 1.*t1193*t580)*t662)*var2[5] - 0.5*(t1378 + t1387 + 0.3*(t1379 + t1380)*t593 + 0.3*(t1383 + t1384)*t662)*var2[7]);
+  p_output1[4]=var2[1]*(-0.5*(t1410 + 0.3*t1000*t1426 + 6.8*t1418*t969 + 6.8*t1413*t982 + 0.3*t1422*t997)*var2[2] - 0.5*(t1410 + t1414 + t1419 + 0.3*t1422*t906 + 0.3*t1426*t926)*var2[4] - 0.5*(t1414 + t1419 + t1436 + t1445 + 6.8*(t1415 + 0.11*Power(t776,2))*t822 + 6.8*(-1.*t1226*t778 - 0.11*t776*t778)*t829 + 0.3*t886*(t1437 + t1438 + t1334*t862 + t1330*t913) + 0.3*(t1441 + t1442 - 1.*t1334*t858 - 1.*t1330*t862)*t938)*var2[6] - 0.5*(t1436 + t1445 + 0.3*(t1437 + t1438)*t886 + 0.3*(t1441 + t1442)*t938)*var2[8]);
+  p_output1[5]=var2[1]*(-0.5*(-0.748*t943 + 0.3*t1471*t987 + 0.3*t1475*t990)*var2[2] - 0.5*(t1468 + 0.3*t1471*t597 + 0.3*t1475*t618)*var2[3] - 0.5*(t1468 + t1484 + t1485)*var2[5] - 0.5*(t1484 + t1485 + 0.3*(-0.4*t574 - 1.*t1131*t574)*t593 + 0.3*t1471*t662)*var2[7]);
+  p_output1[6]=var2[1]*(-0.5*(0.3*t1000*t1504 - 0.748*t969 + 0.3*t1500*t997)*var2[2] - 0.5*(t1497 + 0.3*t1500*t906 + 0.3*t1504*t926)*var2[4] - 0.5*(t1497 + t1513 + t1514)*var2[6] - 0.5*(t1513 + t1514 + 0.3*(-0.4*t852 - 1.*t1247*t852)*t886 + 0.3*t1500*t938)*var2[8]);
+  p_output1[7]=0;
+  p_output1[8]=0;
+}
+
+
+
+#ifdef MATLAB_MEX_FILE
+
+#include "mex.h"
+/*
+ * Main function
+ */
+void mexFunction( int nlhs, mxArray *plhs[],
+                  int nrhs, const mxArray *prhs[] )
+{
+  size_t mrows, ncols;
+
+  double *var1,*var2;
+  double *p_output1;
+
+  /*  Check for proper number of arguments.  */ 
+  if( nrhs != 2)
+    {
+      mexErrMsgIdAndTxt("MATLAB:MShaped:invalidNumInputs", "Two input(s) required (var1,var2).");
+    }
+  else if( nlhs > 1)
+    {
+      mexErrMsgIdAndTxt("MATLAB:MShaped:maxlhs", "Too many output arguments.");
+    }
+
+  /*  The input must be a noncomplex double vector or scaler.  */
+  mrows = mxGetM(prhs[0]);
+  ncols = mxGetN(prhs[0]);
+  if( !mxIsDouble(prhs[0]) || mxIsComplex(prhs[0]) ||
+    ( !(mrows == 9 && ncols == 1) && 
+      !(mrows == 1 && ncols == 9))) 
+    {
+      mexErrMsgIdAndTxt( "MATLAB:MShaped:inputNotRealVector", "var1 is wrong.");
+    }
+  mrows = mxGetM(prhs[1]);
+  ncols = mxGetN(prhs[1]);
+  if( !mxIsDouble(prhs[1]) || mxIsComplex(prhs[1]) ||
+    ( !(mrows == 9 && ncols == 1) && 
+      !(mrows == 1 && ncols == 9))) 
+    {
+      mexErrMsgIdAndTxt( "MATLAB:MShaped:inputNotRealVector", "var2 is wrong.");
+    }
+
+  /*  Assign pointers to each input.  */
+  var1 = mxGetPr(prhs[0]);
+  var2 = mxGetPr(prhs[1]);
+   
+
+
+   
+  /*  Create matrices for return arguments.  */
+  plhs[0] = mxCreateDoubleMatrix((mwSize) 9, (mwSize) 1, mxREAL);
+  p_output1 = mxGetPr(plhs[0]);
+
+
+  /* Call the calculation subroutine. */
+  output1(p_output1,var1,var2);
+
+
+}
+
+#else // MATLAB_MEX_FILE
+
+#include "Ce1_vec2_seven_link_walker.hh"
+
+namespace SymFunction
+{
+
+void Ce1_vec2_seven_link_walker_raw(double *p_output1, const double *var1,const double *var2)
+{
+  // Call Subroutines
+  output1(p_output1, var1, var2);
+
+}
+
+}
+
+#endif // MATLAB_MEX_FILE
